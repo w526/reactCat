@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 const URL = 'https://api.thecatapi.com/v1/images/search'
-const API_KEY = 'live_wdu7FjYDInzOJBhM4oEtIaO1EZp0KmDSTgVcJdFSoYMKYs8vGDvo0VvEmF37z7dP '
+const API_KEY = ''
 
 export default function KittyOfTheDay(){
     const [image, setImage] = useState('');
