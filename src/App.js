@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
+import './components/KittyOfTheDay'
+import KittyOfTheDay from './components/KittyOfTheDay';
+
+
 
 function App() {
+
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Here is a picture of a cat to cheer you up</h1>
+      <KittyOfTheDay/>
+      <div className="divButton">
+        <button type="button" onClick={refreshPage}>I'm still feeling down, make my day even better</button>
+        </div>
     </div>
+    
+    
   );
 }
 
 export default App;
+
